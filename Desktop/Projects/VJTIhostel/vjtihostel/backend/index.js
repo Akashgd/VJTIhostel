@@ -14,6 +14,7 @@ app.use(express.json());
 //available routes
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/students',require('./routes/students'))
+app.use('/api/admins',require('./routes/admins'))
 
 app.listen(port, () => {
   console.log(`VJTI Hostel app is listening on port ${port}`);
